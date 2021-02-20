@@ -1,0 +1,64 @@
+.container {
+    background-color: rgba(226, 43, 180, 0.445);
+    width: 20rem;
+    min-height: 20rem;
+    margin: 0 auto;
+}
+
+.input-form {
+    padding: 1rem 1rem 0.5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-form>input {
+    outline: none;
+}
+
+#todoInput {
+    width: 13rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+#addBtn,
+.remove-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgba(180, 17, 31, 0.5);
+    outline: none;
+}
+
+.to-do-task {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    user-select: none;
+    font-size: 1.2rem;
+}
+
+.to-do-task div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.to-do-task img {
+    width: 1.5rem;
+    background-color: transparent;
+    margin-right: 0.5rem;
+}
+
+.to-be-done-task {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.done-task {
+    text-decoration: line-through;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

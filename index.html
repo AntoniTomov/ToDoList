@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form action="#" class="input-form">
+                <input type="text" placeholder="write your TODO here" id="todoInput">
+                <input type="button" value="Add" id="addBtn">
+            </form>
+            <hr>
+            <div id="toDosContainer"></div>
+        </div>
+    </main>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+
+    <script id="toDoTemplate" type="text/x-handlebars-template">
+        <div class="to-do-task">
+            {{#each todos}}
+            <div>
+                <span class = {{class}}>
+                    <img src="/assets/images/pointing-finger.jpg" alt="to-do">
+                    {{value}}
+                </span>
+                <input type="button" value="Remove" class="remove-btn">
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    <script src="assets/utils.js"></script>
+    <script src="assets/ToDoService.js"></script>
+    <script src="assets/printAllTasks.js"></script>
+    <script src="assets/index.js" defer></script>
+    <script src="assets/ToDoController.js"></script>
+
+</body>
+
+</html>
