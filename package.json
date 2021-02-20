@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoniTomov/ToDoList.git"
+  },
+  "keywords": [
+    "todo",
+    "list"
+  ],
+  "author": "Antoni Tomov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoniTomov/ToDoList/issues"
+  },
+  "homepage": "https://github.com/AntoniTomov/ToDoList#readme"
+}
